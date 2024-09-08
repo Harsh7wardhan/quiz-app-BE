@@ -1,17 +1,19 @@
 const express = require('express');
 const cors = require('cors');
+const config = require('./config/config');
+const testRoutes = require('./routes/index');
+const questionRoutes = require('./routes/questionRoute')
 
 const app = express();
-const port = 4001;
+const port = config.port;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
-// Dummy GET API
-app.get('/api/test', (req, res) => {
-  res.json({ message: 'Backend is working!' });
-});
+// Use routes
+app.use('/api', testRoutes);
+app.use('/api', questionRoutes); 
 
 // Start the server
 app.listen(port, () => {
