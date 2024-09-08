@@ -2,10 +2,14 @@ const { data } = require('../constants/questions')
 
 exports.getAllQuestions = (req, res) => {
     try {
+        const questionsWithoutAnswers = data.map(question => {
+            const { answer, ...questionWithoutAnswer } = question;
+            return questionWithoutAnswer;
+        });
         res.status(200).json({
             status: 'success',
             message: 'Questions fetched successfully',
-            data: data,
+            data: questionsWithoutAnswers, 
         });
     } catch (error) {
         res.status(500).json({
