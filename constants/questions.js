@@ -64,7 +64,7 @@ exports.data = [
         id: '6',
         question: 'What kind of problem is being solved in this image?',
         type: 'single-choice',
-        image: 'https://example.com/problem-image.png',  // Example image
+        image: '/regression.png',
         options: [
             "Regression",
             "Classification",
@@ -113,7 +113,7 @@ exports.data = [
         id: '10',
         question: 'Look at the diagram and identify which algorithm is represented?',
         type: 'single-choice',
-        image: 'https://example.com/algorithm-diagram.png',  // Example image
+        image: '/decision-tree.png',  
         options: [
             "K-Means Clustering",
             "Linear Regression",
