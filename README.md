@@ -6,7 +6,7 @@
 
 **2. Start the Application Locally** -->
 -  The PORT for this project by default is specified as 4002 in config/config.js .
-  Launch the frontend application by running:
+  Launch the backend application by running:
   npm start
 
 **3. Backend Information** -->
