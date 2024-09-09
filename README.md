@@ -1,4 +1,4 @@
-## Running the Upraised Quiz App Backend
+## Running the Quiz App Backend
 
 **1. Install Dependencies** -->
 - Run the following command to install all necessary dependencies:
